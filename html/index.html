@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="pl; charset=utf-8"/>
+    <meta name="description"
+          content="Turystyka – zjawisko przestrzennej ruchliwości ludzi, które związane jest z dobrowolną zmianą miejsca pobytu, środowiska i rytmu życia. Obejmuje całokształt stosunków i zjawisk związanych z ruchem turystycznym."/>
+    <meta name="keywords"
+          content="Globtroterstwo, Karawaning, Krajoznawstwo, Podróżowanie, Tramping, Zwiedzanie, Peregrynowanie, Pielgrzymowanie, Podróże, Przebywanie drogi, Treking, Trekking, Wędrowanie, Przemysł turystyczny, Usługi turystyczne"/>
+    <link rel="stylesheet" href="../css/styl.css" type="text/css"/>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon"/>
+    <title>Co warto zobaczyć na świecie?</title>
+</head>
+
+<body>
+<div>
+    <img class="background" src="../images/background.gif">
+    <div class="menu" onmouseover="showMenu();" onmouseout="hideMenu();">
+        <div class="menu__icon">☰</div>
+        <div id="ml" class="menuList">
+            <button class="option" onclick="goToFooter();"> Konktakt</button>
+            <button class="option" onclick="location.href='https://www.mytravel.pl/'">Biura podróży</button>
+            <button class="option" onclick="location.href='https://www.google.pl/maps'">Mapy świata</button>
+        </div>
+    </div>
+
+    <div class="align">
+        <img class="logo" src="../images/logo.png">
+        <h1 class="name">Ciekawe miejsca</h1>
+    </div>
+    <hr class="line"/>
+
+    <div class="group__places">
+        <div class="place" onclick="location.href='place1.html'">
+            <img class="main__image" alt="alt" src="../images/main1.jpg">
+        </div>
+        <div class="place" onclick="location.href='place2.html'">
+            <img class="main__image" alt="alt" src="../images/main2.jpg">
+        </div>
+        <div class="place" onclick="location.href='place3.html'">
+            <img class="main__image" alt="alt" src="../images/main3.jpg">
+        </div>
+        <div class="place" onclick="location.href='place4.html'">
+            <img class="main__image" alt="alt" src="../images/main4.jpg">
+        </div>
+        <div class="place" onclick="location.href='place5.html'">
+            <img class="main__image" alt="alt" src="../images/main5.jpg">
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div id="foot" class="footerAlign">
+    copyright © 2020
+    <img class="footerLogo" src="../images/logo.png">
+    <div class="footerName">Ciekawe miejsca</div>
+    <br>
+    <br>
+    <div>Kontakt: ul. Bielska, 43-300 Bielsko-Biała, Telefon:123 456 789, Mail:<a href="mailto:mail@mail.pl">
+        mail@mail.pl</a>
+    </div>
+</div>
+</div>
+</body>
+<script>
+    function showMenu() {
+        document.getElementById("ml").style.height = "200px"
+    }
+
+    function hideMenu() {
+        document.getElementById("ml").style.height = "0"
+    }
+
+    function goToFooter() {
+        const element = document.getElementById("foot");
+        element.scrollIntoView();
+    }
+</script>
+</html>
